@@ -1,5 +1,9 @@
 import java.util.Scanner;
-
+/*
+ * This will be a input class to get the user's name and age.
+ * 
+ * @praram scanner Scanner 
+ */
 public class InputNameAge {
 
     public static String getName(Scanner scanner) {

@@ -1,3 +1,7 @@
+/*
+ * This class will display the ASCII art of Diego Brando.
+ * 
+ */
 public class DiegoArt {
     public static void show() {
         String diego = """

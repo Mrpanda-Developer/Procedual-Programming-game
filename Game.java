@@ -1,5 +1,9 @@
 import java.util.Scanner;
-
+/*
+ * This will be the main game loop.
+ * Here we will initialize the game, get user input, and call other classes/methods as needed.
+ * This is also where our scanner object will be created and closed.(And passed to other classes as needed)
+ */
 public class Game {
     public static void main(String[] args) {
         Intro.show();

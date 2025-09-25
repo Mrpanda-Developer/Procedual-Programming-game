@@ -1,3 +1,9 @@
+/*
+ * This class will handle printing the narrative text for each stage of the game.
+ * It will display different messages based on the current state of the game.
+ * @param stateId The current state of the game.
+ */
+
 public class PrintStage {
     public static void show(int stateId) {
         switch (stateId) {

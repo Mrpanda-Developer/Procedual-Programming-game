@@ -1,5 +1,9 @@
-import java.util.Scanner;
 
+import java.util.Scanner;
+/* this will handle the intro scene 
+ * 
+ * @param scanner Scanner 
+*/
 public class Scene {
 
     public static void showIntroScene(Scanner scanner) {

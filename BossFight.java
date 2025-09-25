@@ -1,9 +1,15 @@
 import java.util.Random;
 import java.util.Scanner;
+/*
+ * This class will handle the boss fight mechanics.
+ * The player will face off against a boss with a simple turn-based combat system.
+ * @param scanner The Scanner object for user input.
+ */
 
+ 
 public class BossFight {
     public static void startFight(Scanner scanner) {
-        int playerHP = 20;
+        int playerHP = 900;
         int bossHP = 25;
         Random rand = new Random();
 
@@ -12,22 +18,20 @@ public class BossFight {
         System.out.println("Diego Brando appears on his horse!");
         System.out.println("'Try not to fall behind, loser...'");
         while (playerHP > 0 && bossHP > 0) {
-            // HP balken
+
             System.out.println("Your HP:  " + hpBar(playerHP));
             System.out.println("Boss HP: " + hpBar(bossHP));
 
-            // speler kiest actie
             System.out.print("\nChoose your action (attack / dodge / heal): ");
             String action = scanner.nextLine().trim().toLowerCase();
 
-            // Boss kiest aanval
             String[] bossMoves = {"spin attack", "kick", "golden ratio blast"};
             String bossMove = bossMoves[rand.nextInt(bossMoves.length)];
-            int bossDamage = rand.nextInt(6) + 3; // 3–8 damage
+            int bossDamage = rand.nextInt(6) + 3; 
 
-            // Speleractie verwerken
+            
             if (action.equals("attack")) {
-                int dmg = rand.nextInt(5) + 2; // 2–6 damage
+                int dmg = rand.nextInt(5) + 2; 
                 System.out.println("You strike the Boss for " + dmg + " damage!");
                 bossHP -= dmg;
             } else if (action.equals("dodge")) {
@@ -40,7 +44,7 @@ public class BossFight {
                 System.out.println("You hesitate... (invalid action)");
             }
 
-            // Boss actie
+            // Boss action
             if (bossHP > 0) {
                 System.out.println("Boss uses " + bossMove + "!");
                 if (action.equals("dodge") && rand.nextBoolean()) {

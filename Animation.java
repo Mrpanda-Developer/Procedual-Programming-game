@@ -1,5 +1,5 @@
+/* this class wil handle the animations*/
 public class Animation {
-
     public static void bossDefeated() {
         //yes I am that petty to add the fibonacci sequence, because last year
         //I failed your programming exam because I didn't know it :)

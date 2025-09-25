@@ -1,5 +1,10 @@
 import java.util.Scanner;
-
+/*
+ * This is the race mini-game class.
+ * The player must type prompts quickly and accurately to win
+ * @param scanner The Scanner object for user input.
+ * 
+ */
 public class Race {
     public static void startRace(Scanner scanner) {
         String[] prompts = {
@@ -49,7 +54,7 @@ public class Race {
             }
         }
 
-        // fallback (als niemand finish haalt na alle prompts)
+        // fallback if no one reached finish
         if (player > enemy) {
             System.out.println("\n🏆 You barely win the race!");
         } else if (enemy > player) {

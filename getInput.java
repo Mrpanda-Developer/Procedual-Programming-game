@@ -1,5 +1,9 @@
 import java.util.Scanner;
-
+/*
+ * This will handle the user input and validate it
+ * to ensure it matches one of the predefined actions.
+ * @param scanner Scanner 
+ */
 public class getInput {
       public static String getUserInput(Scanner scanner) {
         System.out.print("What would you like to do?: ");

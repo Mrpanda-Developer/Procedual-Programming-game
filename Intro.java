@@ -1,3 +1,7 @@
+/*
+ * This class will display the intro banner and subtitle for the game.
+ * 
+ */
 public class Intro {
 
     public static void show() {
