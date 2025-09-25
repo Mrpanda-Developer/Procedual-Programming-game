@@ -12,18 +12,18 @@ public class Game {
         System.out.println("Hello, " + name + "! You are " + age + " years old.");
         
         int stateId = 0;
-        printStage.show(stateId);
+        PrintStage.show(stateId);
 
         while (true) {
             String action = getInput.getUserInput(scanner);
-            stateId = takeAction.Visitor(action, stateId);
+            stateId = takeAction.Visitor(action, stateId, scanner);
 
             if (stateId == 666) {
                 System.out.println("You left the Steel Ball Run... Thanks for playing!");
                 break;
             }
 
-            printStage.show(stateId);
+            PrintStage.show(stateId);
         }
 
         scanner.close(); 
