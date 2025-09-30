@@ -4,7 +4,7 @@ public class Animation {
     public static void bossDefeated() {
         //yes I am that petty to add the fibonacci sequence, because last year
         //I failed your programming exam because I didn't know it :)
-        int[] fib = {1, 1, 2, 3, 5, 8, 13}; 
+        int[] fib = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55}; 
 
         System.out.println("\nThe Golden Ratio spiral forms before your eyes...\n");
         //size of the grid

@@ -10,7 +10,7 @@ import java.util.Scanner;
  
 public class BossFight {
     public static void startFight(Scanner scanner) {
-        int playerHP = 900;
+        int playerHP = 20;
         int bossHP = 25;
         Random rand = new Random();
 
