@@ -1,0 +1,1 @@
+use: java Game.Game to run the .tar file
